@@ -1,0 +1,29 @@
+" Select the default plugin categories to install
+let g:spf13_bundle_groups = ['general', 'html', 'javascript', 'misc', 'neocomplcache', 'programming', 'python', 'ruby', 'scala', 'haskell']
+
+" Use powerline over airline
+let g:spf13_use_powerline = 1
+
+" Install some fantastic plugins
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'gkz/vim-ls'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'marvim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'nono/vim-handlebars'
+Bundle 'othree/html5.vim'
+Bundle 'Raimondi/VimRegEx.vim'
+Bundle 'sjl/gundo.vim'
+Bundle 'taglist.vim'
+Bundle 'tpope/vim-eunuch'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-rhubarb'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/loremipsum'
+Bundle 'vim-scripts/searchfold.vim'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'vsutil.vim'
+Bundle 'wincent/Command-T'
+Bundle 'xolox/vim-lua-ftplugin'
+Bundle 'xolox/vim-misc'

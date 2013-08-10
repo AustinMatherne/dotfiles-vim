@@ -1,0 +1,107 @@
+" Source the local vimrc file after saving
+if has("autocmd")
+  autocmd bufwritepost .vimrc.local source ~/.vimrc.local
+endif
+
+" Set terminal vim to 256 colors
+set t_Co=256
+
+set textwidth=80
+set wrap
+set linebreak
+set formatoptions -=t
+set formatoptions +=cn
+
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
+" Disable audible bell
+set visualbell
+
+set smartindent
+
+" Set current working directory to active file
+if has("autocmd")
+  autocmd BufEnter * silent! lcd %:p:h
+endif
+
+" Use indentation for code folding
+set foldmethod=indent
+
+" Always display the statusline in all windows
+set laststatus=2
+
+" Hide the default mode text (e.g. -- INSERT -- below the statusline)
+set noshowmode
+
+" Remap quit to buffer delete
+:cnoreabbrev wq w<bar>bd
+:cnoreabbrev q bd
+
+" Map '<c-a>' to select all
+nnoremap <c-a> ggVG
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" Disable mouse scrolling
+map <ScrollWheelUp> <nop>
+imap <ScrollWheelUp> <nop>
+map <ScrollWheelDown> <nop>
+imap <ScrollWheelDown> <nop>
+
+" Map next and previous zen completion to '<M-n>' and <M-N> respectively
+let g:user_zen_next_key = '<M-n>'
+let g:user_zen_prev_key = '<M-N>'
+
+" Enable handlebars file support
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=handlebars
+
+" Map Tag List window to '<Leader>l' and '<F4>'
+nnoremap <Leader>l :TlistToggle<CR>
+nnoremap <F4> :TlistToggle<CR>
+
+" Move the Tag List window to the right
+let g:Tlist_Use_Right_Window = 1
+
+" Map Command-T to '<F5>'
+nnoremap <F5> :CommandT<CR>
+
+" Map NERDTree window to '<F6>'
+nnoremap <F6> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+
+" Disable in window NERDtree help
+let g:NERDTreeMinimalUI = 1
+
+" Map Gundo window to '<Leader>gt' and '<F7>'
+nnoremap <Leader>gt :GundoToggle<CR>
+nnoremap <F7> :GundoToggle<CR>
+
+" Render Gundo diff at the bottom of the screen
+let g:gundo_preview_bottom = 1
+
+" Disable in window Gundo help
+let g:gundo_help = 0
+
+" Map Yank Ring window to '<Leader>yr' and '<F8>'
+nnoremap <Leader>yr :YRShow<CR>
+nnoremap <F8> :YRShow<CR>
+
+" Map Gist to '<Leader>gs' '<F9>'
+nnoremap <Leader>gi :Gist -l<CR>
+nnoremap <F9> :Gist -l<CR>
+
+" Allow Gist.vim access to the system clipboard
+let g:gist_clip_command = 'xclip -selection clipboard'
+
+" Make Gist detect filetype from filename
+let g:gist_detect_filetype = 1
+
