@@ -5,11 +5,10 @@ let g:spf13_bundle_groups = ['general', 'html', 'javascript', 'misc', 'neocomplc
 let g:spf13_use_powerline = 1
 
 " Install some fantastic plugins
+Bundle 'digitaltoad/vim-jade'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'gkz/vim-ls'
-Bundle 'leafgarland/typescript-vim'
 Bundle 'marvim'
-Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'nono/vim-handlebars'
 Bundle 'othree/html5.vim'
 Bundle 'Raimondi/VimRegEx.vim'
@@ -20,7 +19,6 @@ Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-rhubarb'
 Bundle 'tpope/vim-unimpaired'
-Bundle 'vim-scripts/loremipsum'
 Bundle 'vim-scripts/searchfold.vim'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'vsutil.vim'
