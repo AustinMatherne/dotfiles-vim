@@ -1,0 +1,8 @@
+" Source the local before vimrc file after saving
+if has("autocmd")
+  autocmd bufwritepost .vimrc.before.local source ~/.vimrc.before.local
+endif
+
+" Enable powerline symbols
+let g:airline_powerline_fonts = 1
+
