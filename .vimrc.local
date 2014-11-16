@@ -89,8 +89,8 @@ nnoremap <F4> :TlistToggle<CR>
 " Move the Tag List window to the right
 let g:Tlist_Use_Right_Window = 1
 
-" Map Command-T to '<F5>'
-nnoremap <F5> :CommandT<CR>
+" Map ctrlp.vim to '<F5>'
+nnoremap <F5> :CtrlPMixed<CR>
 
 " Map NERDTree window to '<F6>'
 nnoremap <F6> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
