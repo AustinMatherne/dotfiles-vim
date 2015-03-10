@@ -1,0 +1,12 @@
+" Maximize windows at startup
+au GUIEnter * simalt ~x
+
+" Set Powerline patched font
+set guifont=Sauce\ Code\ Powerline:h11
+
+" Start vertical split window
+au VimEnter * vsplit
+
+" Remove menu bars
+set guioptions=-e
+
