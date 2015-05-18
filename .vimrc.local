@@ -121,7 +121,7 @@ let host = system("zsh -c 'echo $HOST'")
 " Use SSH clipboard if on headless server
 if host =~ "pangoDev"
   vmap ` y: call system("clip-set", getreg("\""))<CR>
-  map ` :call setreg("\"", system("clip-get"))<CR>p
+  nmap ` :call setreg("\"", system("clip-get"))<CR>p
 endif
 
 " Allow Gist.vim access to the system clipboard
