@@ -116,14 +116,16 @@ nnoremap <F8> :YRShow<CR>
 nnoremap <Leader>gi :Gist -l<CR>
 nnoremap <F9> :Gist -l<CR>
 
+let host = system("zsh -c 'echo $HOST'")
+
 " Use SSH clipboard if on headless server
-if system("echo $DISPLAY") == ""
+if host =~ "pangoDev"
   vmap ` y: call system("clip-set", getreg("\""))<CR>
   map ` :call setreg("\"", system("clip-get"))<CR>p
 endif
 
 " Allow Gist.vim access to the system clipboard
-if system("echo $DISPLAY") == ""
+if host =~ "pangoDev"
   let g:gist_clip_command = 'clip-get'
 else
   let g:gist_clip_command = 'x'
