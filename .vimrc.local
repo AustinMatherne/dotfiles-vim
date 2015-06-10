@@ -79,6 +79,9 @@ imap <ScrollWheelDown> <nop>
 let g:user_zen_next_key = '<M-n>'
 let g:user_zen_prev_key = '<M-N>'
 
+" Set eslint as syntastic javascript checker
+let g:syntastic_javascript_checkers = ['eslint']
+
 " Enable handlebars file support
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=handlebars
 
@@ -133,5 +136,4 @@ endif
 
 " Make Gist detect filetype from filename
 let g:gist_detect_filetype = 1
-
 
