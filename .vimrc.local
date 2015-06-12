@@ -79,6 +79,9 @@ imap <ScrollWheelDown> <nop>
 let g:user_zen_next_key = '<M-n>'
 let g:user_zen_prev_key = '<M-N>'
 
+" Prepend comments with a single space.
+let g:NERDSpaceDelims = 1
+
 " Set eslint as syntastic javascript checker
 let g:syntastic_javascript_checkers = ['eslint']
 
