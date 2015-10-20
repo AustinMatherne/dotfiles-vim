@@ -85,6 +85,9 @@ let g:NERDSpaceDelims = 1
 " Set eslint as syntastic javascript checker
 let g:syntastic_javascript_checkers = ['eslint', 'flow']
 
+" Auto add go imports on save
+let g:go_fmt_command = "goimports"
+
 " Enable vim-go syntax-highlighting
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
