@@ -4,7 +4,7 @@ if has("autocmd")
 endif
 
 " Select the default plugin categories to install
-let g:spf13_bundle_groups = ['general', 'writing', 'programming', 'neocomplcache', 'python', 'javascript', 'haskell', 'html', 'ruby', 'go', 'elixir', 'misc']
+let g:spf13_bundle_groups = ['general', 'writing', 'programming', 'neocomplete', 'python', 'javascript', 'haskell', 'html', 'ruby', 'go', 'elixir', 'misc']
 
 " Enable powerline symbols
 let g:airline_powerline_fonts = 1
