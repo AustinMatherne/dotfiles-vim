@@ -98,6 +98,8 @@ let g:go_highlight_build_constraints = 1
 " Enable handlebars file support
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=handlebars
 
+" Enable async easytags
+let g:easytags_async = 1
 
 " Map Tagbar window to '<F4>'
 nnoremap <F4> :TagbarToggle<CR>
