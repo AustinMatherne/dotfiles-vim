@@ -2,6 +2,7 @@
 Bundle 'airblade/vim-gitgutter'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'flowtype/vim-flow'
 Bundle 'justinj/vim-react-snippets'
 Bundle 'marvim'
 Bundle 'mxw/vim-jsx'
