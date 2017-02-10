@@ -2,7 +2,7 @@
 au GUIEnter * simalt ~x
 
 " Set Powerline patched font
-set guifont=Sauce\ Code\ Powerline:h11
+set guifont=SauceCodePro\ NF:h14
 
 " Remove menu bars
 set guioptions=-e
