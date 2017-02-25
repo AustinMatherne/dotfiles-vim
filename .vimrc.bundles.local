@@ -1,5 +1,6 @@
 " Install some fantastic plugins
 Bundle 'airblade/vim-gitgutter'
+Bundle 'chriskempson/base16-vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'flowtype/vim-flow'

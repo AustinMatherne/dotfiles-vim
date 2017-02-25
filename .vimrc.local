@@ -6,10 +6,12 @@ endif
 " Set terminal vim to 256 colors
 set t_Co=256
 
+" Tomorrow night theme
+let base16colorspace=256
+colorscheme base16-tomorrow-night
+
 " Set indent background to gray
 let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=8
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=8
 hi IndentGuidesOdd ctermbg=8
 hi IndentGuidesEven ctermbg=8
 
