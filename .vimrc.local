@@ -98,6 +98,10 @@ let g:go_highlight_build_constraints = 1
 " Enable handlebars file support
 au BufRead,BufNewFile *.handlebars,*.hbs set ft=handlebars
 
+" Enable Jasmine file support
+au FileType js UltiSnipsAddFiletypes javascript-jasmine
+au FileType ts UltiSnipsAddFiletypes javascript-jasmine
+
 " Use Tsuquyomi Typescript checker
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
