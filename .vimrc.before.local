@@ -6,6 +6,6 @@ endif
 " Select the default plugin categories to install
 let g:spf13_bundle_groups = ['general', 'writing', 'programming', 'youcompleteme', 'python', 'javascript', 'haskell', 'html', 'ruby', 'go', 'elixir', 'misc']
 
-" Enable powerline symbols
+" Airline
 let g:airline_powerline_fonts = 1
-
+let g:airline_theme = 'base16_tomorrow'
