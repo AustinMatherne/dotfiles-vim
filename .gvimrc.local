@@ -1,8 +1,9 @@
 " Maximize windows at startup
-au GUIEnter * simalt ~x
+" au GUIEnter * simalt ~x
 
 " Set Powerline patched font
-set guifont=SauceCodePro\ NF:h14
+" set guifont=SauceCodePro\ NF:h14
+set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete:h16
 
 " Remove menu bars
 set guioptions=-e
