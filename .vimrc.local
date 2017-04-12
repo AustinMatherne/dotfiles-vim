@@ -59,6 +59,9 @@ set noshowmode
 :cnoreabbrev wq w<bar>bd
 :cnoreabbrev q bd
 
+" Remap Exit to exit
+:cnoreabbrev Exit exit
+
 " Map '<c-a>' to select all
 nnoremap <c-a> ggVG
 
